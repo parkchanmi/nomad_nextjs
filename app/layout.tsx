@@ -1,5 +1,5 @@
 import "../styles/global.css";
-
+import { Jua } from "next/font/google";
 import { Metadata } from "next";
 import Navigation from "../components/navigation";
 
@@ -11,11 +11,12 @@ export const metadata: Metadata = {
   description: "The best movies on the best framework",
 };
 
+const jua = Jua({ subsets: ["latin"], weight: ["400"] });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body className={jua.className}>
         <Navigation />
         {children}
       </body>
