@@ -13,8 +13,9 @@ export const metadata: Metadata = {
 };
 
 const sourGummy = Sour_Gummy({
-  weight: ['400', '700'], // 필요한 폰트 두께 선택
-  subsets: ['latin'], // 필요한 서브셋 선택
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display:"swap"
 });
 
 export default function Layout({ children }: { children: React.ReactNode }) {
