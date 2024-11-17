@@ -1,0 +1,57 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+.maintitle{
+  display: flex;
+  justify-content: center;
+  margin-bottom:80px;
+  font-size:30px;
+}
+ .book{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+    place-items: center;
+    border: 1px solid;
+ }
+  
+  .poster {
+    max-width: 100%;
+    width:100%;
+    place-self: center;
+  }
+  
+  .title {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    height:100px;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .buy {
+    border: 1px solid #ffffff;
+    width:60px;
+    text-align: center;
+    padding:5px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .buy:hover{
+    scale:1.2;
+    text-decoration: none;
+  }

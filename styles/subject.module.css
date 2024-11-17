@@ -1,0 +1,12 @@
+
+.subject {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    cursor: pointer;
+    place-items: center;
+    border:1px solid;
+    border-radius: 15px;
+    padding:10px;
+    text-align:center;
+  }
+ 
